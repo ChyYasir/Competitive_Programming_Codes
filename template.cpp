@@ -7,6 +7,7 @@ using namespace std;
 #define ppb             pop_back
 #define pf              push_front
 #define ppf             pop_front
+#define ppb             pop_back
 #define all(x)          (x).begin(), (x).end()
 #define uniq(v)         (v).erase(unique(all(v)), (v).end())
 #define sz(x)           (int)((x).size())
