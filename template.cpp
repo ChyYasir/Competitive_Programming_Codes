@@ -7,7 +7,6 @@ using namespace std;
 #define ppb             pop_back
 #define pf              push_front
 #define ppf             pop_front
-#define ppb             pop_back
 #define all(x)          (x).begin(), (x).end()
 #define uniq(v)         (v).erase(unique(all(v)), (v).end())
 #define sz(x)           (int)((x).size())
@@ -46,7 +45,8 @@ void fast_io()
     ios::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
 }
-
+int gcd(int a, int b) {if (b == 0) return a; return gcd(b, a % b);}
+int lcm(int a, int b) {return a / gcd(a, b) * b;}
 
 void solve() {
 
