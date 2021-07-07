@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+#include<ext/pb_ds/assoc_container.hpp> // common file
+#include<ext/pb_ds/tree_policy.hpp> // including tree_order_statistics_node_update
+
+using namespace __gnu_pbds;
+
+#define ordered_set tree<int, null_type, less<int> , rb_tree_tag, tree_order_statistics_node_update>
 
 #define int             long long
 #define pb              push_back
@@ -50,7 +56,7 @@ int lcm(int a, int b) {return a / gcd(a, b) * b;}
 
 void solve() {
 
-
+    cout << 1 << endl;
 
 
 }
