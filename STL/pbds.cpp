@@ -2,8 +2,8 @@
 
 using namespace std;
 
-#include<ext/pb_ds/assoc_container.hpp>
-#include<ext/pb_ds/tree_policy.hpp>
+#include<ext/pb_ds/assoc_container.hpp> // common file
+#include<ext/pb_ds/tree_policy.hpp> // including tree_order_statistics_node_update
 
 using namespace __gnu_pbds;
 
@@ -25,9 +25,9 @@ int main(){
     }
     cout << endl;
 
-    cout << st.order_of_key(6) << endl; // st.order_of_key(x) returns the number of elements less than x ;
+    cout << st.order_of_key(10) << endl; // st.order_of_key(x) returns the number of elements less than x ;
 
-    auto it = st.find_by_order(3); // returns an iterator pointing to the 3rd index element [0-based indexing]
+    auto it = st.find_by_order(10); // returns an iterator pointing to the 3rd index element [0-based indexing]
 
     cout << *it << endl;
 
