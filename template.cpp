@@ -6,7 +6,6 @@ using namespace std;
 
 using namespace __gnu_pbds;
 
-#define ordered_set tree<int, null_type, less<int> , rb_tree_tag, tree_order_statistics_node_update>
 
 #define int             long long
 #define pb              push_back
@@ -23,10 +22,21 @@ using namespace __gnu_pbds;
 #define mem0(a)         memset(a, 0, sizeof(a))
 #define endl            "\n"
 #define debug(x)        cerr << #x << " == " << (x) << '\n';
+#define YES             cout << "YES\n"
+#define NO              cout << "NO\n"
+#define nn              "\n"
+
+// bit manipulation
+#define SetBit(x, k)    (x |= (1LL << k))
+#define ClearBit(x, k)  (x &= ~(1LL << k))
+#define CheckBit(x, k)  (x & (1LL << k))
+
+
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 typedef vector<pii> vpii;
 
+#define ordered_set tree<int, null_type, less<int> , rb_tree_tag, tree_order_statistics_node_update>
 
 const long long INF = 1e18;
 const int32_t M = 1e9 + 7;
@@ -56,7 +66,7 @@ int lcm(int a, int b) {return a / gcd(a, b) * b;}
 
 void solve() {
 
-    cout << 1 << endl;
+
 
 
 }
