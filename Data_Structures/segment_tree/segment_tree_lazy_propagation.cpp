@@ -3,6 +3,8 @@
 using namespace std;
 #define debug(x)        cerr << #x << " == " << (x) << '\n';
 
+#define int long long
+
 void fast_io()
 {
     ios::sync_with_stdio(0);
@@ -111,42 +113,33 @@ int query(int node, int tl, int tr, int l, int r) {
 }
 
 
-int main() {
+signed main() {
     fast_io();
 
     int t; cin >> t;
 
     for (int i = 1; i <= t; i++) {
 
-        string s; cin >> s;
-        int n = s.size();
+        int n; cin >> n;
+        int q; cin >> q;
         build(1, 0, n - 1);
 
-        cout << "Case " << i << ":" << endl;
-        int q; cin >> q;
+        // cout << "Case " << i << ":" << endl;
         while (q--) {
             char c; cin >> c;
 
-            if (c == 'I') {
+            if (c == '0') {
+                int l, r, v; cin >> l >> r >> v;
+                l--;
+                r--;
+                update(1, 0, n - 1, l, r, v);
+            }
+            else {
                 int l, r; cin >> l >> r;
                 l--;
                 r--;
-                update(1, 0, n - 1, l, r, 1);
-            }
-            else {
-                int x; cin >> x;
-                x--;
-                int val = query(1, 0, n - 1, x, x);
-                // debug(val);
-                if (val & 1) {
-                    // the bit is flipped
 
-                    if (s[x] == '0') cout << '1' << endl;
-                    else cout << '0' << endl;
-                }
-                else {
-                    cout << s[x] << endl;
-                }
+                cout << query(1, 0, n - 1, l, r) << endl;
             }
         }
 
