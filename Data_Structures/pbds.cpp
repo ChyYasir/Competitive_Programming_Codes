@@ -42,7 +42,7 @@ struct ordered_multiset { // multiset supporting duplicating values in set
 
     inline ll lower_bound(ll x) {     // Count of value <x in treap
         x += MAXVAL;
-        ll c = mp[x];
+        ll c = 0;
         return (T.order_of_key((x * ADD) + c));
     }
 
