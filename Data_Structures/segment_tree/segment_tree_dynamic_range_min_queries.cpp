@@ -4,8 +4,12 @@ using namespace std;
 
 #define int             long long
 #define debug(x)        cerr << #x << " == " << (x) << '\n';
-
-
+#define endl            "\n"
+void fast_io()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+}
 const int INF = 1e18;
 const int N = 2e5 + 5;
 
@@ -69,6 +73,7 @@ int query(int node, int tl, int tr, int l, int r) {
     return merge(lft, rht);
 }
 signed main() {
+    fast_io();
     int n, q; cin >> n >> q;
 
     for (int i = 0; i < n; i++) {
