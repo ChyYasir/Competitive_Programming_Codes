@@ -7,17 +7,17 @@ using namespace std;
 using namespace __gnu_pbds;
 
 
-#define int             long long
+#define ll             long long
 #define pb              push_back
 #define ppb             pop_back
 #define pf              push_front
 #define ppf             pop_front
 #define all(x)          (x).begin(), (x).end()
 #define uniq(v)         (v).erase(unique(all(v)), (v).end())
-#define sz(x)           (int)((x).size())
+#define sz(x)           (ll)((x).size())
 #define ff              first
 #define ss              second
-#define rep(i, a, b)    for(int i = a; i <= b; i++)
+#define rep(i, a, b)    for(ll i = a; i <= b; i++)
 #define mem1(a)         memset(a, -1, sizeof(a))
 #define mem0(a)         memset(a, 0, sizeof(a))
 #define endl            "\n"
@@ -32,19 +32,19 @@ using namespace __gnu_pbds;
 #define CheckBit(x, k)  (x & (1LL << k))
 
 
-typedef pair<int, int> pii;
-typedef vector<int> vi;
+typedef pair<ll, ll> pii;
+typedef vector<ll> vi;
 typedef vector<pii> vpii;
 
-#define ordered_set tree<int, null_type, less<int> , rb_tree_tag, tree_order_statistics_node_update>
+#define ordered_set tree<ll, null_type, less<ll> , rb_tree_tag, tree_order_statistics_node_update>
 
 const long long INF = 1e18;
 const int32_t M = 1e9 + 7;
 const int32_t MM = 998244353;
 
 
-int binpow(int a, int b) {
-    int res = 1;
+ll binpow(ll a, ll b) {
+    ll res = 1;
     while (b > 0) {
         if (b & 1) {
             res = a * res;
@@ -61,10 +61,12 @@ void fast_io()
     ios::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
 }
-int gcd(int a, int b) {if (b == 0) return a; return gcd(b, a % b);}
-int lcm(int a, int b) {return a / gcd(a, b) * b;}
+ll gcd(ll a, ll b) {if (b == 0) return a; return gcd(b, a % b);}
+ll lcm(ll a, ll b) {return a / gcd(a, b) * b;}
+ll mul(ll a, ll b) {return ((a % M) * (b % M)) % M;}
 
-void solve() {
+
+void KhelaFinal() {
 
 
 
@@ -78,14 +80,14 @@ signed main()
 //    freopen("input.txt", "r", stdin);
 //    freopen("output.txt", "w", stdout);
 //#endif
-    int t = 1;
+    ll t = 1;
 
     cin >> t;
 
 
     while (t--) {
 
-        solve();
+        KhelaFinal();
 
 
     }
